@@ -3,7 +3,7 @@ __constant char SEEDCHARS[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 __constant int NUM_CHARS = 36;
 
 int s_char_num(char c){
-    return c - (49 + (c>57)*7);
+    return c - (48 + (c>57)*7);
 }
 
 typedef struct Seed {
